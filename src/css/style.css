@@ -1,0 +1,42 @@
+.product-img {
+  height: 500px;
+}
+
+body {
+  background: #f9f9f9;
+  padding-top: 75px;
+}
+
+.topBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.avatar {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+}
+
+.backButton {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 15px;
+}
+
+@media (max-width: 575px) {
+  .product-img {
+    height: 500px;
+  }
+  .topBar {
+    display: block;
+  }
+  body:has(.book-list) {
+    padding-top: 50px;
+  }
+}
